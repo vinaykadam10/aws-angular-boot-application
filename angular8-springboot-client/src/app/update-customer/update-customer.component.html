@@ -1,0 +1,21 @@
+<h3>Update Customer</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="customer.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Address</label>
+      <input type="text" class="form-control" id="address" required [(ngModel)]="customer.address" name="address">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Type Of Account</label>
+      <input type="text" class="form-control" id="typeOfAccount" required [(ngModel)]="customer.typeOfAccount" name="typeOfAccount">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
